@@ -1,0 +1,34 @@
+[33mcommit 591ca93d6f6bc5da3ade36b13e907ec6de90e2aa[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: 0mar-elsayad <omarshm144@gmail.com>
+Date:   Sun Apr 28 01:07:37 2024 +0300
+
+    adding offers foldercss and jsx  and mounting it with shop
+
+[33mcommit f97655d804c0bfa80c99d8bc72a27d99a4c68e31[m
+Author: 0mar-elsayad <omarshm144@gmail.com>
+Date:   Sun Apr 28 00:48:12 2024 +0300
+
+    commit extra changes
+
+[33mcommit e54f87b4d431cbd798c5866c04201ed4576b3074[m
+Author: 0mar-elsayad <omarshm144@gmail.com>
+Date:   Sun Apr 28 00:38:35 2024 +0300
+
+    adding dollar sign to new price
+
+[33mcommit 952bada85554ab147f328768db88f94c0d8c02b7[m
+Author: 0mar-elsayad <omarshm144@gmail.com>
+Date:   Sun Apr 28 00:30:51 2024 +0300
+
+    adding css features to Popular.css
+
+[33mcommit 1006aeb03441cce322dd9b829a4de93aa6fe4306[m
+Author: 0mar-elsayad <omarshm144@gmail.com>
+Date:   Sat Apr 27 15:09:00 2024 +0300
+
+    1-Adding components (Assets, Hero, Item, Navbar, popular).
+    2-Adding jsx and css files to each and every component (Assets, Hero, Item, Navbar, popular) and building them in each jsx and css file.
+    3-Adding Pages (Cart,LoginSignup, Shop, Product, Shop category).
+    4-Adding (hero, popular) to Shop page.
+    5-Adding routes to pages and connecting them at App.js file.
+    6-Adding margin:0 ; at index.css
