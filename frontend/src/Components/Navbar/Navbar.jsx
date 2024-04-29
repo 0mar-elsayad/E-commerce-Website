@@ -24,7 +24,7 @@ const dropdown_toggle = (e)=>{
                 <img src={logo} alt="" />
                 <p>SHOPPER</p>
                 </div> 
-                <image onClick={dropdown_toggle} src= {nav_dropdown} alt=""/>
+                <img className='nav-dropdown' onClick={dropdown_toggle} src= {nav_dropdown} alt=""/>
                 <ul ref={menuRef} className="nav-menu">               
                     <li onClick={()=>{setMenu("shop")}}><Link style={{textDecoration:'none'}} to='/'>Shop</Link>Shop{menu==="shop"?<hr/>:<></>}</li>
                     <li onClick={()=>{setMenu("mens")}}><Link style={{textDecoration:'none'}} to='/mens'>Men</Link>Men{menu==="mens"?<hr/>:<></>}</li>
