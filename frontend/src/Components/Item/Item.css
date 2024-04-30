@@ -38,3 +38,12 @@
         font-size: 14px;
     }
 }
+@media(max_width:1024px){
+    .item{
+        width: 170px;
+        font-size:13px;
+    }
+    .item img {
+        width: 170px;
+    }
+}
