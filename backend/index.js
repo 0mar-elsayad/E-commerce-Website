@@ -82,6 +82,27 @@ app.post('/addproduct', async (req, res) => {
     }
 });
 
+//creating api for deleting products
+
+app.post('/removeproduct', async (req, res) => {
+    try {
+        await Product.findOneAndDelete({ id: req.body.id });
+        console.log('Product removed');
+        res.json({ success: true, name: req.body.name });
+    } catch (error) {
+        console.error("Error removing product:", error);
+        res.status(500).json({ success: false, error: "Failed to remove product" });
+    }
+});
+//creating api for getting all products
+app.get('/allproducts', async (req, res)=>{
+let products=await Product.find({});
+console.log('all Products fetched');
+res.send(products);
+})
+
+
+
 
 
 
