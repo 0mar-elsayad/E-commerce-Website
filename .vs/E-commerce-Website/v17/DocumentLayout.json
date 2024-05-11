@@ -1,0 +1,120 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\moamena ahmed\\Desktop\\E-commerce-Website\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moamena ahmed\\Desktop\\E-commerce-Website\\frontend\\src\\Components\\Popular\\Popular.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\Components\\Popular\\Popular.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moamena ahmed\\Desktop\\E-commerce-Website\\frontend\\src\\Components\\NewCollections\\NewCollections.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\Components\\NewCollections\\NewCollections.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moamena ahmed\\Desktop\\E-commerce-Website\\frontend\\src\\Pages\\LoginSignup.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\Pages\\LoginSignup.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moamena ahmed\\Desktop\\E-commerce-Website\\frontend\\src\\Components\\Navbar\\Navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\Components\\Navbar\\Navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moamena ahmed\\Desktop\\E-commerce-Website\\frontend\\src\\Context\\ShopContext.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\Context\\ShopContext.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moamena ahmed\\Desktop\\E-commerce-Website\\backend\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NewCollections.jsx",
+              "DocumentMoniker": "C:\\Users\\moamena ahmed\\Desktop\\E-commerce-Website\\frontend\\src\\Components\\NewCollections\\NewCollections.jsx",
+              "RelativeDocumentMoniker": "frontend\\src\\Components\\NewCollections\\NewCollections.jsx",
+              "ToolTip": "C:\\Users\\moamena ahmed\\Desktop\\E-commerce-Website\\frontend\\src\\Components\\NewCollections\\NewCollections.jsx",
+              "RelativeToolTip": "frontend\\src\\Components\\NewCollections\\NewCollections.jsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-05-07T23:55:25.978Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Popular.jsx",
+              "DocumentMoniker": "C:\\Users\\moamena ahmed\\Desktop\\E-commerce-Website\\frontend\\src\\Components\\Popular\\Popular.jsx",
+              "RelativeDocumentMoniker": "frontend\\src\\Components\\Popular\\Popular.jsx",
+              "ToolTip": "C:\\Users\\moamena ahmed\\Desktop\\E-commerce-Website\\frontend\\src\\Components\\Popular\\Popular.jsx",
+              "RelativeToolTip": "frontend\\src\\Components\\Popular\\Popular.jsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-05-08T00:19:26.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ShopContext.jsx",
+              "DocumentMoniker": "C:\\Users\\moamena ahmed\\Desktop\\E-commerce-Website\\frontend\\src\\Context\\ShopContext.jsx",
+              "RelativeDocumentMoniker": "frontend\\src\\Context\\ShopContext.jsx",
+              "ToolTip": "C:\\Users\\moamena ahmed\\Desktop\\E-commerce-Website\\frontend\\src\\Context\\ShopContext.jsx",
+              "RelativeToolTip": "frontend\\src\\Context\\ShopContext.jsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-05-07T22:11:40.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Navbar.jsx",
+              "DocumentMoniker": "C:\\Users\\moamena ahmed\\Desktop\\E-commerce-Website\\frontend\\src\\Components\\Navbar\\Navbar.jsx",
+              "RelativeDocumentMoniker": "frontend\\src\\Components\\Navbar\\Navbar.jsx",
+              "ToolTip": "C:\\Users\\moamena ahmed\\Desktop\\E-commerce-Website\\frontend\\src\\Components\\Navbar\\Navbar.jsx",
+              "RelativeToolTip": "frontend\\src\\Components\\Navbar\\Navbar.jsx",
+              "ViewState": "AQIAABMAAAAAAAAAAAAIwC0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-05-07T22:01:00.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginSignup.jsx",
+              "DocumentMoniker": "C:\\Users\\moamena ahmed\\Desktop\\E-commerce-Website\\frontend\\src\\Pages\\LoginSignup.jsx",
+              "RelativeDocumentMoniker": "frontend\\src\\Pages\\LoginSignup.jsx",
+              "ToolTip": "C:\\Users\\moamena ahmed\\Desktop\\E-commerce-Website\\frontend\\src\\Pages\\LoginSignup.jsx",
+              "RelativeToolTip": "frontend\\src\\Pages\\LoginSignup.jsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-05-07T20:53:01.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\moamena ahmed\\Desktop\\E-commerce-Website\\backend\\index.js",
+              "RelativeDocumentMoniker": "backend\\index.js",
+              "ToolTip": "C:\\Users\\moamena ahmed\\Desktop\\E-commerce-Website\\backend\\index.js",
+              "RelativeToolTip": "backend\\index.js",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAIwJQAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-07T19:21:30.523Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

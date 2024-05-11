@@ -122,16 +122,16 @@ const users = mongoose.model('users', {
     },
     date: {
         type: Date,
-        default:Date,
+        default:Date.now,
 
     }
     
 })
 //creating endpoint for registring the user
-app.post('/singup', async (req, res) => {
-    let check = await user.findOne({ email: req.body.email });
+app.post('/signup', async (req, res) => {
+    let check = await users.findOne({ email: req.body.email });
     if (check) {
-        return es.status(400).json({success:false,errors:"existing user found with same email address"})
+        return res.status(400).json({success:false,errors:"existing user found with same email address"})
     }
     let cart = {};
     for (let i = 0; i < 300; i++) {
@@ -182,17 +182,17 @@ app.post('/login', async (req, res) => {
 })
 
 //creating endpoint for new collection
-app.get('/newcollection', async (req, res) => {
+app.get('/newcollections', async (req , res) => {
 
-    let products = await product.find({});
-    let newcollection = product.slice(1).slice(-8);
+    let products = await Product.find({});
+    let newcollection = products.slice(1).slice(-8);
     console.log("Newcollection Fetched");
     res.send(newcollection);
 })
 
 //endpoint for popular in women section
 app.get('/popularinwomen', async (req, res) => {
-    let products = await product.find({ category: "women" });
+    let products = await Product.find({ category: "women" });
     let popular_in_women = products.slice(0, 4);
     console.log("Popular in women fetched");
     res.send(popular_in_women);

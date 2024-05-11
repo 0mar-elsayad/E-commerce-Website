@@ -26,7 +26,7 @@ const ShopContextProvider = (props) => {
                 method: 'POST',
                 headers: {
                     accept: 'application/form-data',
-                    'auth-token': `${, localStorage.getItem('auth-token')}`,
+                    'auth-token': `${ localStorage.getItem('auth-token')}`,
                     'Content-Type': 'application/json',
 
                 },

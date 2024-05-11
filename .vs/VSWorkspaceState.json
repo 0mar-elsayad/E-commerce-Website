@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\admin",
+    "\\backend",
+    "\\frontend",
+    "\\frontend\\public",
+    "\\frontend\\src",
+    "\\frontend\\src\\Components",
+    "\\frontend\\src\\Components\\Navbar",
+    "\\frontend\\src\\Components\\NewCollections",
+    "\\frontend\\src\\Components\\Popular"
+  ],
+  "SelectedNode": "\\admin\\.gitignore",
+  "PreviewInSolutionExplorer": false
+}
