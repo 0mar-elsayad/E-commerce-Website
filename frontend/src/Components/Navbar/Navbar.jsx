@@ -69,6 +69,7 @@ const Navbar = () => {
       </ul>
       <div className="nav-login-cart">
         {localStorage.getItem("auth-token") ? (
+          <div style={{ display: "flex", flexDirection: "row", gap:"1em" }}>
           <button
             onClick={() => {
               localStorage.removeItem("auth-token");
@@ -77,6 +78,13 @@ const Navbar = () => {
           >
             Logout
           </button>
+          <button>
+          <Link to="/dashboard">
+            dashboard
+          </Link>
+          </button>
+   
+          </div>
         ) : (
           <Link to="/login">
             <button>Login</button>
