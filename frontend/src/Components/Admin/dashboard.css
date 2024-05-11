@@ -1,0 +1,36 @@
+.dashboard  {
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto; 
+}
+.form { 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1em;
+    padding-top: 1em;
+}
+.form input {
+    padding: 1em;
+    border-radius: 10px;
+}
+.form button { 
+    padding: 1em 2.5em;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    width: fit-content;
+}
+.form-group { 
+    display: flex;
+    flex-direction: column;
+}
+.error-message { 
+    color: red;
+}
