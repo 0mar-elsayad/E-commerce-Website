@@ -2,16 +2,21 @@ import React, { useEffect, useState } from 'react';
 import './Popular.css'
 import data_product from '../Assets/data'
 import Item from '../Item/Item'
+import axios from 'axios';
 
 const Popular = () => {
 
     const [popularproducts, setPopularProducts] = useState([]);
     useEffect(()=>{
-
-        fetch('http://localhost:4000/popularinwomen')
-            .then((Response)=> Response.json())
-            .then((data)=> setPopularProducts(data));
-
+        const fetchData = async () => {
+            try {
+                const response = await axios.get('http://localhost:4000/popularinwomen');
+                setPopularProducts(response.data);
+            } catch (error) {
+                console.error("Error fetching popular products:", error);
+            }
+        };
+        fetchData();
     },[])
 
     return (
