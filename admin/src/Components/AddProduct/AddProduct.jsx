@@ -18,7 +18,7 @@ const AddProduct = () => {
     const changeHandler=(e) => {
         setProductDetails({...ProductDetails,[e.target.name]:e.target.value})
     }
-    const Add_Product=async() => {
+    const Add_Product=async() => { // handling image 
         console.log(ProductDetails);
         let responseData;
         let product=ProductDetails; // created a copy of object of product details
