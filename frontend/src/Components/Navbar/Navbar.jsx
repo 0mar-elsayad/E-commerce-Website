@@ -80,12 +80,20 @@ const Navbar = () => {
           >
             Logout
           </button>
-          <button>
           <Link to="/dashboard">
+          <button>
+          
             dashboard
-          </Link>
+          
           </button>
-   
+          </Link>
+          <Link to = "/profile" >
+          <button>
+            
+              profile
+            
+          </button>
+          </Link>
           </div>
         ) : (
           <Link to="/login">
