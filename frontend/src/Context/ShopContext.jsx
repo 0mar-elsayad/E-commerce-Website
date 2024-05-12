@@ -16,25 +16,23 @@ const ShopContextProvider = (props) => {
   const [all_product, setAll_product] = useState([]);
   const [cartItems, setCartItems] = useState(getDefaultCart());
 
-    useEffect(() => {
+  useEffect(() => {
+    axios.get("http://localhost:4000/allproducts")
+      .then((response) => setAll_product(response.data))
+      .catch((error) => console.error("Error fetching products:", error));
 
-        fetch('http://localhost:4000/allproducts')
-            .then((Response) => Response.json())
-            .then((data)=>setAll_product(data))
-        if (localStorage.getItem('auth-token')) {
-            fetch('http://localhost:4000/getcart', {
-                method: 'POST',
-                headers: {
-                    accept: 'application/form-data',
-                    'auth-token': `${ localStorage.getItem('auth-token')}`,
-                    'Content-Type': 'application/json',
-
-                },
-                body: "",
-            }).then((Response) => Response.json())
-                .then((data) => setCartItems(data));
-        }
-    },[])
+    if (localStorage.getItem("auth-token")) {
+      axios.post("http://localhost:4000/getcart", {}, {
+        headers: {
+          accept: "application/form-data",
+          "auth-token": `${localStorage.getItem("auth-token")}`,
+          "Content-Type": "application/json",
+        },
+      })
+        .then((response) => setCartItems(response.data))
+        .catch((error) => console.error("Error fetching cart:", error));
+    }
+  }, []);
 
   const addToCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
