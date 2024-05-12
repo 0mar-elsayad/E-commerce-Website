@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const multer = require('multer');
 const path = require('path');
 const jwt = require("jsonwebtoken");
+const bcrypt = require('bcrypt');
 const cors = require('cors');
 const { type } = require('os');
 
@@ -34,33 +35,43 @@ const users = mongoose.model('users', {
     
 })
 //creating endpoint for registring the user
+
+
+// Endpoint for registering the user
 router.post('/signup', async (req, res) => {
-    let check = await users.findOne({ email: req.body.email });
-    if (check) {
-        return res.status(400).json({success:false,errors:"existing user found with same email address"})
-    }
-    let cart = {};
-    for (let i = 0; i < 300; i++) {
-        cart[i] = 0;
-    }
-    const user = new users({
-        name:req.body.username,
-        email: req.body.email,
-        password: req.body.password,
-        cartData:cart,
-
-    })
-    await user.save();
-
-    const data = {
-        user:{
-            id:user.id
+    try {
+        const check = await User.findOne({ email: req.body.email });
+        if (check) {
+            return res.status(400).json({ success: false, errors: "Existing user found with the same email address" });
         }
-    }
-    const token = jwt.sign(data, 'secret_ecom');
-    res.json({success:true,token})
-})
+        
+        // Hash the password
+        const saltRounds = 10;
+        const hashedPassword = await bcrypt.hash(req.body.password, saltRounds);
 
+        // Create the user with hashed password
+        const cart = {};
+        for (let i = 0; i < 300; i++) {
+            cart[i] = 0;
+        }
+        const user = new User({
+            name: req.body.username,
+            email: req.body.email,
+            password: hashedPassword,
+            cartData: cart,
+        });
+        await user.save();
+
+        const data = {
+            user: { id: user.id }
+        };
+        const token = jwt.sign(data, process.env.JWT_SECRET || 'secret_ecom');
+        res.json({ success: true, token });
+    } catch (error) {
+        console.error("Error registering user:", error);
+        res.status(500).json({ success: false, error: "Failed to register user" });
+    }
+});
 
 //creating endpoint for user login
 router.post('/login', async (req, res) => {
