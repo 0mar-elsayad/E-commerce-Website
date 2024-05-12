@@ -22,13 +22,20 @@ Enter these lines to that:
      $ cd frontend
      $ npm install
      $ npm start
+   
+6. Run Admin Panel
+   #open new terminal
+   $cd admin
+   $npm create vite@latest .
+   $npm install
+   $npm run dev
 
-6. Create Admin User
+7. Create Admin User
 Run this on chrome: http://localhost:4000/api/users/'/signup'
 Note admin email and password
 
 
-7. Admin Login
+8. Admin Login
 Run http://localhost:8080/#/signin
 Enter admin email and password and click signin
 Click Dashboard Link on Header Menu
