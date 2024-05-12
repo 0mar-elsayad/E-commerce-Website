@@ -9,11 +9,25 @@ const { type } = require('os');
 const app = express();
 const port = 4000;
 
-app.use(express.json());
-app.use(cors());
+app.use(express.json()); //middleware for parse incoming request bodies with JSON
+
+app.use(cors()); //enable  and security communication front and back
 
 // Database Connection with MongoDB
 mongoose.connect("mongodb+srv://kareemToson:kareemtoson123@cluster0.tr43lhr.mongodb.net/webApp?retryWrites=true&w=majority&appName=Cluster0");
+
+
+// Middleware to log each request
+const logRequest = (req, res, next) => {
+    console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
+    next(); // Call next middleware in the chain
+};
+
+// Add the middleware to the application
+app.use(logRequest);
+
+
+
 
 app.get('/', (req, res) => {
     res.send("Express app is running");
